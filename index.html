@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Avaliação Mensal do Aluno</title>
+</head>
+
+<body>
+    <form>
+        <header>
+            <h1>Avaliação Mensal de Desempenho do Aluno</h1>
+        </header>
+        <section id="student_data">
+            <input type="text" id="student_name" placeholder="Nome do Aluno">
+            <input type="text" id="class_and_level" placeholder="Turma/Nível">
+            <input type="text" id="unit" placeholder="Unidade">
+            <input type="date" id="start_date">
+            <input type="month" id="month">
+        </section>
+        <section id="grade">
+            <input type="radio" name="grade" id="bad">
+            <label for="bad">Bad (1/2)</label>
+            <input type="radio" name="grade" id="fair">
+            <label for="fair">Fair (3/4)</label>
+            <input type="radio" name="grade" id="good">
+            <label for="good">Good (5/6)</label>
+            <input type="radio" name="grade" id="very_good">
+            <label for="very_good">Very Good (7/8)</label>
+            <input type="radio" name="grade" id="excellent">
+            <label for="excellent">Excellent (9/10)</label>
+        </section>
+        <section id="engagement">
+            <h3>Fator 1: Participação</h3>
+            <div id="engagement1">
+                <h4>Realiza as atividades propostas em sala</h4>
+                <input type="number" id="activities_grade" max="10" min="1" maxlength="1">
+            </div>
+            
+            <div id="engagement2">
+                <h4>Interage com o professor(a)</h4>
+                <input type="number" id="teacher_interaction_grade" max="10" min="1" maxlength="1">
+            </div>
+
+            <div id="engagement3">
+                <h4>Interage e contribui para o aprendizado dos colegas de classe</h4>
+                <input type="number" id="general_interaction_grade" max="10" min="1" maxlength="1">
+            </div>
+            
+            <div id="engagement4">
+                <h4>Ajuda na elaboração do Action Time</h4>
+                <input type="number" id="action_time_grade" max="10" min="1" maxlength="1">
+            </div>
+            
+        </section>
+        <section id="discipline">
+            <h3>Fator 2: Disciplina/Responsabilidade</h3>
+            <div id="discipline1">
+                <h4>Atua no Action Time</h4>
+                <input type="number" id="acting_grade" max="10" min="1" maxlength="1">
+            </div>
+            
+            <div id="discipline2">
+                <h4>Nível de participação/interesse do aluno</h4>
+                <input type="number" id="interest_grade" max="10" min="1" maxlength="1">
+            </div>
+
+            <div id="discipline3">
+                <h4>Chega no horário correto da aula</h4>
+                <input type="number" id="participation_grade" max="10" min="1" maxlength="1">
+            </div>
+            
+            <div id="discipline4">
+                <h4>Faz e entrega os exercícios de casa</h4>
+                <input type="number" id="homework_grade" max="10" min="1" maxlength="1">
+            </div>
+
+            <div id="discipline5">
+                <h4>Traz material de estudo</h4>
+                <input type="number" id="school_supplies_grade" max="10" min="1" maxlength="1">
+            </div>
+            
+            <div id="discipline6">
+                <h4>Separa um horário para ler e rever o conteúdo dado em aula, para que consiga melhor absorção do conteúdo e traga dúvidas</h4>
+                <input type="number" id="routine_study_grade" max="10" min="1" maxlength="1">
+            </div>
+            
+            <div id="discipline7">
+                <h4>Empenho em estar imerso no idioma inglês visando o aprendizado do mesmo.</h4>
+                <input type="number" id="immersion_grade" max="10" min="1" maxlength="1">
+            </div>
+            
+        </section>
+        <section id="teacher_observation">
+            <h3>Observações do Professor</h3>
+            <input type="text" id="obs">
+        </section>
+        <section id="student_observation">
+            <h3>Observações do Aluno</h3>
+            <input type="text" id="obs">
+        </section>
+        <section id="signatures">
+            <h3>Data da avaliação</h3>
+            <input type="date" id="report_date">
+            <h3>Professor responsável:</h3>
+            <input type="text" id="teacher">
+            <h3>Assinatura: </h3>
+            <h3>Coordenador pedagógico:</h3>
+            <input type="text" id="coordinator">
+            <h3>Assinatura: </h3>
+        </section>
+    </form>
+</body>
+
+</html>
