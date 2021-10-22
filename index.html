@@ -13,95 +13,95 @@
         <header>
             <h1>Avaliação Mensal de Desempenho do Aluno</h1>
         </header>
-        <section id="student_data">
-            <input type="text" id="student_name" placeholder="Nome do Aluno">
-            <input type="text" id="class_and_level" placeholder="Turma/Nível">
-            <input type="text" id="unit" placeholder="Unidade">
-            <input type="date" id="start_date">
-            <input type="month" id="month">
+        <section class="card" id="student_data">
+            <input class="studentInput" type="text" id="student_name" placeholder="Nome do Aluno">
+            <input class="studentInput" type="text" id="class_and_level" placeholder="Turma/Nível">
+            <input class="studentInput" type="text" id="unit" placeholder="Unidade">
+            Data de início das aulas: <input class="studentInput" type="date" id="start_date">
+            Referente ao mês de: <input class="studentInput" type="month" id="month">
         </section>
-        <section id="grade">
-            <input type="radio" name="grade" id="bad">
-            <label for="bad">Bad (1/2)</label>
-            <input type="radio" name="grade" id="fair">
-            <label for="fair">Fair (3/4)</label>
-            <input type="radio" name="grade" id="good">
-            <label for="good">Good (5/6)</label>
-            <input type="radio" name="grade" id="very_good">
-            <label for="very_good">Very Good (7/8)</label>
-            <input type="radio" name="grade" id="excellent">
-            <label for="excellent">Excellent (9/10)</label>
+        <section class="card" id="grade">
+            <input class="gradeRadio" type="radio" name="grade" id="bad">
+            <label for="bad">Bad<br>(1/2)</label>
+            <input class="gradeRadio" type="radio" name="grade" id="fair">
+            <label for="fair">Fair<br>(3/4)</label>
+            <input class="gradeRadio" type="radio" name="grade" id="good">
+            <label for="good">Good<br>(5/6)</label>
+            <input class="gradeRadio" type="radio" name="grade" id="very_good">
+            <label for="very_good">Very Good<br>(7/8)</label>
+            <input class="gradeRadio" type="radio" name="grade" id="excellent">
+            <label for="excellent">Excellent<br>(9/10)</label>
         </section>
-        <section id="engagement">
+        <section class="card" id="engagement">
             <h3>Fator 1: Participação</h3>
-            <div id="engagement1">
+            <div class="criteria" id="engagement1">
                 <h4>Realiza as atividades propostas em sala</h4>
                 <input type="number" id="activities_grade" max="10" min="1" maxlength="1">
             </div>
             
-            <div id="engagement2">
+            <div class="criteria" id="engagement2">
                 <h4>Interage com o professor(a)</h4>
                 <input type="number" id="teacher_interaction_grade" max="10" min="1" maxlength="1">
             </div>
 
-            <div id="engagement3">
+            <div class="criteria" id="engagement3">
                 <h4>Interage e contribui para o aprendizado dos colegas de classe</h4>
                 <input type="number" id="general_interaction_grade" max="10" min="1" maxlength="1">
             </div>
             
-            <div id="engagement4">
+            <div class="criteria" id="engagement4">
                 <h4>Ajuda na elaboração do Action Time</h4>
                 <input type="number" id="action_time_grade" max="10" min="1" maxlength="1">
             </div>
             
         </section>
-        <section id="discipline">
+        <section class="card" id="discipline">
             <h3>Fator 2: Disciplina/Responsabilidade</h3>
-            <div id="discipline1">
+            <div class="criteria" id="discipline1">
                 <h4>Atua no Action Time</h4>
                 <input type="number" id="acting_grade" max="10" min="1" maxlength="1">
             </div>
             
-            <div id="discipline2">
+            <div class="criteria" id="discipline2">
                 <h4>Nível de participação/interesse do aluno</h4>
                 <input type="number" id="interest_grade" max="10" min="1" maxlength="1">
             </div>
 
-            <div id="discipline3">
+            <div class="criteria" id="discipline3">
                 <h4>Chega no horário correto da aula</h4>
                 <input type="number" id="participation_grade" max="10" min="1" maxlength="1">
             </div>
             
-            <div id="discipline4">
+            <div class="criteria" id="discipline4">
                 <h4>Faz e entrega os exercícios de casa</h4>
                 <input type="number" id="homework_grade" max="10" min="1" maxlength="1">
             </div>
 
-            <div id="discipline5">
+            <div class="criteria" id="discipline5">
                 <h4>Traz material de estudo</h4>
                 <input type="number" id="school_supplies_grade" max="10" min="1" maxlength="1">
             </div>
             
-            <div id="discipline6">
+            <div class="criteria" id="discipline6">
                 <h4>Separa um horário para ler e rever o conteúdo dado em aula, para que consiga melhor absorção do conteúdo e traga dúvidas</h4>
                 <input type="number" id="routine_study_grade" max="10" min="1" maxlength="1">
             </div>
             
-            <div id="discipline7">
+            <div class="criteria" id="discipline7">
                 <h4>Empenho em estar imerso no idioma inglês visando o aprendizado do mesmo.</h4>
                 <input type="number" id="immersion_grade" max="10" min="1" maxlength="1">
             </div>
             
         </section>
-        <section id="teacher_observation">
+        <section class="card" id="teacher_observation">
             <h3>Observações do Professor</h3>
-            <input type="text" id="obs">
+            <input type= "text" id="obs">
         </section>
-        <section id="student_observation">
+        <section class="card" id="student_observation">
             <h3>Observações do Aluno</h3>
             <input type="text" id="obs">
         </section>
-        <section id="signatures">
+        <section class="card" id="signatures">
             <h3>Data da avaliação</h3>
             <input type="date" id="report_date">
             <h3>Professor responsável:</h3>

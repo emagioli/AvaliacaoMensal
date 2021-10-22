@@ -1,32 +1,132 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: rgb(233, 99, 99);
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  background-color: rgb(138, 177, 248);
 }
 
-header{
-    background-color: rgb(225, 224, 224);
-    margin: auto;
-    margin-bottom: 1em;
-    width: 60%;
-    padding: 5px;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 10px;
+.card {
+  background-color: white;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px; 
 }
 
-h1{
-    text-align: center;
-    font-size: 1.8em;
+header {
+  background-color: white;
+  margin: auto;
+  margin-top: 1em;
+  margin-bottom: 1em; 
+  width: calc(100% - 100px);
+  max-width: 600px;
+  min-width: 250px;
+  padding: 15px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
 }
 
-#student_data{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
+h1 {
+  text-align: center;
+  font-size: 1.5em;
 }
 
+#student_data {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 100px);
+  max-width: 600px;
+  min-width: 250px;
+  margin: auto;
+  padding: 20px;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 10px;
+}
+
+.studentInput {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-style: solid;
+  border-radius: 8px;
+}
+
+#grade {
+  width: calc(100% - 200px);
+  max-width: 600px;
+  min-width: 320px;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  word-wrap: break-word;
+}
+
+#engagement {
+  margin: auto;
+  margin-bottom: 15px;
+  width: calc(100% - 100px);
+  max-width: 600px;
+  min-width: 320px;
+  padding: 20px;
+}
+
+.criteria {
+  display: flex;
+  justify-content: flex-start;
+  padding: 5px;
+}
+
+.criteria input[type="number"]{
+  margin-left: 10px;
+  width: 1.2em;
+  height: 1.2em;
+}
+
+#discipline {
+  margin: auto;
+  width: calc(100% - 100px);
+  max-width: 600px;
+  min-width: 320px;
+  padding: 20px;
+}
+
+#teacher_observation{
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: calc(100% - 100px);
+  max-width: 600px;
+  min-width: 320px;
+  padding: 20px;
+}
+
+#student_observation{
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: calc(100% - 100px);
+  max-width: 600px;
+  min-width: 320px;
+  padding: 20px;
+}
+
+#signatures{
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: calc(100% - 100px);
+  max-width: 600px;
+  min-width: 320px;
+  padding: 20px;
+
+}
